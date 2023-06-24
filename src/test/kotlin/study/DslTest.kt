@@ -1,15 +1,13 @@
 package study
 
-import io.kotest.matchers.equality.shouldBeEqualToComparingFields
-import io.kotest.matchers.shouldBe
-import io.kotest.matchers.types.shouldBeSameInstanceAs
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.ValueSource
-import resume.builder.HardSkill
+import io.kotest.matchers.shouldBe
 import resume.model.Person
 import resume.introduce
+import resume.builder.HardSkill
 import resume.builder.SoftSkill
 import resume.model.Language
 import resume.model.Languages
@@ -97,9 +95,5 @@ class DslTest {
                 )
             )
         )
-
     }
-
 }
-
-
